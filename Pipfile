@@ -4,10 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-pygame = "*"
 pyqt5 = "*"
 eyed3 = "*"
-mutagen = "*"
 pillow = "*"
 
 [dev-packages]

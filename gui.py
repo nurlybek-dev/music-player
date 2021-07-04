@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '.\new.ui'
+# Form implementation generated from reading ui file '.\gui.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -72,10 +72,22 @@ class Ui_MainWindow(object):
         self.artist_label = QtWidgets.QLabel(self.frame_2)
         self.artist_label.setObjectName("artist_label")
         self.verticalLayout.addWidget(self.artist_label)
-        self.track_progress = QtWidgets.QSlider(self.frame_2)
-        self.track_progress.setOrientation(QtCore.Qt.Horizontal)
-        self.track_progress.setObjectName("track_progress")
-        self.verticalLayout.addWidget(self.track_progress)
+        self.frame_6 = QtWidgets.QFrame(self.frame_2)
+        self.frame_6.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_6.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_6.setObjectName("frame_6")
+        self.horizontalLayout_6 = QtWidgets.QHBoxLayout(self.frame_6)
+        self.horizontalLayout_6.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_6.setSpacing(5)
+        self.horizontalLayout_6.setObjectName("horizontalLayout_6")
+        self.time_slider = QtWidgets.QSlider(self.frame_6)
+        self.time_slider.setOrientation(QtCore.Qt.Horizontal)
+        self.time_slider.setObjectName("time_slider")
+        self.horizontalLayout_6.addWidget(self.time_slider)
+        self.current_time_label = QtWidgets.QLabel(self.frame_6)
+        self.current_time_label.setObjectName("current_time_label")
+        self.horizontalLayout_6.addWidget(self.current_time_label)
+        self.verticalLayout.addWidget(self.frame_6)
         self.verticalLayout.setStretch(0, 1)
         self.verticalLayout_2.addWidget(self.frame_2)
         self.frame = QtWidgets.QFrame(self.frame_4)
@@ -125,7 +137,7 @@ class Ui_MainWindow(object):
         self.playlist_frame.setObjectName("playlist_frame")
         self.horizontalLayout = QtWidgets.QHBoxLayout(self.playlist_frame)
         self.horizontalLayout.setObjectName("horizontalLayout")
-        self.playlist = QtWidgets.QListWidget(self.playlist_frame)
+        self.playlist = QtWidgets.QListView(self.playlist_frame)
         self.playlist.setObjectName("playlist")
         self.horizontalLayout.addWidget(self.playlist)
         self.horizontalLayout_4.addWidget(self.playlist_frame)
@@ -158,12 +170,13 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Player"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.playlist_name_label.setText(_translate("MainWindow", "TextLabel"))
         self.playlist_button.setText(_translate("MainWindow", "List"))
         self.cover_label.setText(_translate("MainWindow", "Image"))
         self.title_label.setText(_translate("MainWindow", "Title"))
         self.artist_label.setText(_translate("MainWindow", "Artist"))
+        self.current_time_label.setText(_translate("MainWindow", "00:00 / 00:00"))
         self.prev_button.setText(_translate("MainWindow", "Prev"))
         self.stop_button.setText(_translate("MainWindow", "Stop"))
         self.play_button.setText(_translate("MainWindow", "Play"))
