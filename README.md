@@ -1,10 +1,14 @@
 # General
 Simple desktop music player.
 
-Implemented using: 
+Implemented using:
 - python3
 - pyqt5
-- pygame
+
+Features:
+- Basic media player controller
+- Create playlists
+- Save / Load system
 
 ![Image 1](./docs/img_1.png)
 
